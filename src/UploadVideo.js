@@ -32,7 +32,7 @@ const [videouploading,setVideoUploading] = useState(true)
 
   const handleSubtitleLog = async () => {
     if(videos !== ''&& subtitles !== ''){
-  await  axios.post("http://localhost:3030/upload_video", {
+  await  axios.post("https://mern-stack-customvideo-subtitles.vercel.app/upload_video", {
       video: videos,  // Make sure to include the video property
       subtitles: subtitles,
     })

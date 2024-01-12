@@ -10,7 +10,7 @@ function Displayvideoitem() {
   }, []);
 
   const fetchdata = () => {
-    axios.get("http://localhost:3030/uploaded_videowithsubtitles")
+    axios.get("https://mern-stack-customvideo-subtitles.vercel.app/uploaded_videowithsubtitles")
       .then((res) => {
         setVideodata(res.data);
         console.log(res.data, "res.data");
