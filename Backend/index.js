@@ -4,10 +4,9 @@ const mongoose = require("mongoose");
 const videomodel = require("./Videomodel.js")
 const app = express()
 
-app.use(cors({
-    origin:"https://mern-stack-customvideo-subtitles-xvhv.vercel.app/"
-}));
+app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({extended:false}))
 
 mongoose.connect("mongodb+srv://pavankumarirrinki0123:pavankumarirrinki0123@cluster0.838wwg2.mongodb.net/?retryWrites=true&w=majority").
 then(()=>console.log("DB Connected"));
