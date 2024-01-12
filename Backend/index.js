@@ -5,7 +5,7 @@ const videomodel = require("./Videomodel.js")
 const app = express()
 
 app.use(cors({
-    origin:"*"
+    origin:"https://mern-stack-customvideo-subtitles-xvhv.vercel.app/"
 }));
 app.use(express.json());
 
